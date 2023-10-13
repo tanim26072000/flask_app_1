@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,11 +21,13 @@
         text-align: center;
         font-weight: bolder;
       }
+
       #banner {
         width: 100%;
         height: 400px;
         object-fit: fill;
       }
+
       #title {
         font-size: 30px;
         font-family: "Times New Roman";
@@ -33,11 +35,13 @@
         font-weight: normal;
         text-align: center;
       }
+
       p {
         font-size: 20px;
         font-family: "Times New Roman";
         font-weight: lighter;
       }
+
       #para {
         font-size: 20px;
         color: rgb(123, 0, 255);
@@ -45,6 +49,7 @@
       }
     </style>
   </head>
+
   <body>
     {% include 'navbar.html' %}
     <h1 class="text-center mt-4 mb-2">{{com_name}}</h1>
@@ -76,7 +81,9 @@
       <h2 class="text-center">Open Positions</h2>
       <div>{%for job in jobs%} {% include 'jobitem.html' %} {% endfor %}</div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg mt-4">Contact us</button>
+        <a href="mailto:tanim26072000@gmail.com?subject=queries about JIGAOBD"
+          ><button class="btn btn-primary btn-lg mt-4">Contact us</button></a
+        >
       </div>
       <!-- <p class="text-center mt-4">Copyright 2023,{{com_name}}</p> -->
     </div>
